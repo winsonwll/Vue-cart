@@ -1,0 +1,277 @@
+@charset "utf-8";
+@import "../reset/reset";
+$c0: #000;
+$c3: #333;
+$c6: #666;
+$c9: #999;
+$cc: #ccc;
+$cf: #fff;
+$cr: #f00;
+$lf: left;
+$rg: right;
+$ct: center;
+$hd: hidden;
+$ch: 0 auto; // 水平居中
+$lte7: true; // 小于等于ie7
+$lte6: true; // 小于等于ie6
+
+// 字体大小
+@for $i from 6 through 12 {
+    .f#{ $i * 2} {
+  		font-size: 2 * $i + px; 
+  	}
+}
+.f13 {
+	font-size: 13px;
+}
+.f30 {
+	font-size: 30px;
+}
+
+// 字体样式 
+.fb {
+	font-weight: $bold;
+}
+.fn {
+	font-weight: $nm;
+}
+
+// 雅黑
+.fyahei {
+	font-family: \5FAE\8F6F\96C5\9ED1;
+}
+
+// 字体颜色
+.c0 {
+	color: $c0;
+}
+.c3 {
+	color: $c3;
+}
+.c6 {
+	color: $c6;
+}
+.c9 {
+	color: $c9;
+}
+.cc {
+	color: $cc;
+}
+.cf {
+	color: $cf;
+}
+.cred {
+	color: $cr;
+}
+
+// 行高
+.lh150 {
+	line-height: 150%;
+}
+.lh180 {
+	line-height: 180%;
+}
+.lh200 {
+	line-height: 200%;
+}
+
+// 文本对齐
+.tl {
+	text-align: $lf;
+}
+.tc {
+	text-align: $ct;
+}
+.tr {
+	text-align: $rg;
+}
+
+// 文本段首缩进2个字符
+.t2 {
+	text-indent: 2em;
+}
+.thd {
+    text-indent: -999em;
+    overflow: hidden;
+}
+
+// 背景颜色
+.bg_w {
+	background-color: $cf;
+}
+
+// 显示与隐藏
+.none {
+	display: $none;
+}
+.show {
+	display: block;
+}
+.hidden {
+	visiility: $hd;
+}
+
+// 定位
+.pr {
+	position: relative;
+}
+.pa {
+	position: absolute;
+}
+.pf {
+	position: fixed;
+}
+
+// 垂直方向
+.vt {
+	vertical-align: top;
+}
+.vm {
+	vertical-align: middle;
+}
+.vb {
+	vertical-align: bottom;
+}
+
+// 浮动 
+.fl {
+	float: $lf;
+	@if $lte6 {
+		_display: inline; // ie6 bug
+	}
+}
+.fr {
+	float: $rg;
+	@if $lte6 {
+		_display: inline; // ie6 bug
+	}
+}
+
+// 水平居中
+.ch {
+	margin: $ch;
+}
+
+// 满屏高度 
+.h {
+	height: 100%;
+}
+
+// 宽度
+.w {
+	width: 100%;
+}
+.w150 {
+	width: 150px;
+}
+.w250 {
+	width: 250px;
+}
+@for $i from 1 through 10 {
+  .w#{ $i * 100} {
+  		width: 100 * $i + px; 
+  	}
+}
+
+// 清除浮动 
+.clearfix {
+    &:after {
+        content: "."; 
+        display: block; 
+        clear: both; 
+        overflow: $hd; 
+        height: 0;
+    }
+    @if $lte7 {
+		*zoom: 1;
+	}
+}
+
+// 文本超出一行省略号显示
+.ellipsis {
+    overflow: $hd; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
+
+// 内联
+.inline_block {
+    display:inline-block; 
+    @if $lte7 {
+        *display:inline;
+        *zoom:1;
+    }
+}
+
+// 透明度
+@mixin opacity($opacity:50) {
+  opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity);
+}
+
+// 文字自动换行
+@mixin breakWord {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+// 外间距 
+@for $i from 1 through 8 {
+  	.m#{ $i * 5} {
+  		margin: 5 * $i + px; 
+  	}
+} 
+@for $i from 1 through 8 {
+  	.mt#{ $i * 5} {
+  		margin-top: 5 * $i + px; 
+  	}
+}
+@for $i from 1 through 8 {
+  	.mr#{ $i * 5} {
+  		margin-right: 5 * $i + px; 
+  	}
+}
+@for $i from 1 through 8 {
+  	.mb#{ $i * 5} {
+  		margin-bottom: 5 * $i + px; 
+  	}
+}
+@for $i from 1 through 8 {
+  	.ml#{ $i * 5} {
+  		margin-left: 5 * $i + px; 
+  	}
+}
+
+//padding 
+@for $i from 1 through 8 {
+  	.p#{ $i * 5} {
+  		padding: 5 * $i + px; 
+  	}
+}
+@for $i from 1 through 8 {
+  	.pt#{ $i * 5} {
+  		padding-top: 5 * $i + px; 
+  	}
+}
+@for $i from 1 through 8 {
+  	.pr#{ $i * 5} {
+  		padding-right: 5 * $i + px; 
+  	}
+}
+@for $i from 1 through 8 {
+  	.pb#{ $i * 5} {
+  		padding-bottom: 5 * $i + px; 
+  	}
+}
+@for $i from 1 through 8 {
+  	.pl#{ $i * 5} {
+  		padding-left: 5 * $i + px; 
+  	}
+}
+
+// 解决ie6 position:fixed bug
+@if lte6 {
+	html{ 
+		_background:url("about:blank") fixed; 
+	}
+}

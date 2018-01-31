@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta content="IE=dege,chrom=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>书单实例-组件通信</title>
+</head>
+<body>
+    <!--
+    完整的通信流程
+
+        - 组件监听用户行为（我们的例子里是点击）
+
+        - 用户点击，触发组件自身的方法并发布信号（`$emit`）：我这边的`toggle-box`事件被触发了
+
+        - HTML中的`v-on`指令捕捉到这个信号，执行Vue实例下的`toggleBox`方法
+
+        - `showBox`的值被修改，`v-show`对文字进行隐藏或显示
+    -->
+
+    <div id="app">
+        <div v-show="showBox">123456</div>
+        <!--当Vue实例监听到组件上自定义的`toggle-box`事件被触发，就会执行它的`toggleBox`方法-->
+        <toggle-btn v-on:toggled="toggleBox"></toggle-btn>
+        <!--
+        toggled 组件自定义的事件
+        v-on 实例上的事件
+        -->
+
+        <listener></listener>
+        <toggle-btn></toggle-btn>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta content="IE=dege,chrom=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>书单实例-组件</title>
+</head>
+<body>
+    <div id="app">
+        <!--组件是可复用的-->
+        <one></one>
+        <one-item></one-item>   <!--中划线分词-->
+
+        <!--2. 获取动态数据-->
+        <two></two>
+
+        <!--3.1 往slot插入数据 替换slot-->
+        <three>这是第三个three</three>
+        <three-item></three-item>
+
+        <!--4. 多个slot 往指定slot插入特定内容-->
+        <four>
+            <ul slot="header" v-for="n in 5">
+                <li>{{ n }}</li>
+            </ul>
+            <p slot="content">这是第四个</p>
+            <!--如果不需要多余标签 用template标签-->
+            <template slot="content">
+                这是第四个4-2
+            </template>
+        </four>
+
+        <!--5. 组件的自定义属性-->
+        <five user-name="jhon"></five>
+
+        <!--动态的获取自定义属性的值 v-model+v-bind-->
+        <input type="text" v-model="userIpt">
+        <br>
+        <five v-bind:user-name="userIpt"></five>
+
+        <!--6. 组件嵌套使用-->
+        <six></six>
+    </div>
+</body>
+</html>

@@ -1,0 +1,430 @@
+{
+    "entry": {
+        "address": [
+            "webpack-dev-server/client?http://localhost:5000/",
+            "webpack/hot/dev-server",
+            "E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\src\\js\\address.js"
+        ],
+        "book": [
+            "webpack-dev-server/client?http://localhost:5000/",
+            "webpack/hot/dev-server",
+            "E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\src\\js\\book.js"
+        ],
+        "book2": [
+            "webpack-dev-server/client?http://localhost:5000/",
+            "webpack/hot/dev-server",
+            "E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\src\\js\\book2.js"
+        ],
+        "book3": [
+            "webpack-dev-server/client?http://localhost:5000/",
+            "webpack/hot/dev-server",
+            "E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\src\\js\\book3.js"
+        ],
+        "book4": [
+            "webpack-dev-server/client?http://localhost:5000/",
+            "webpack/hot/dev-server",
+            "E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\src\\js\\book4.js"
+        ],
+        "index": [
+            "webpack-dev-server/client?http://localhost:5000/",
+            "webpack/hot/dev-server",
+            "E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\src\\js\\index.js"
+        ],
+        "list": [
+            "webpack-dev-server/client?http://localhost:5000/",
+            "webpack/hot/dev-server",
+            "E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\src\\js\\list.js"
+        ],
+        "pagelist": [
+            "webpack-dev-server/client?http://localhost:5000/",
+            "webpack/hot/dev-server",
+            "E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\src\\js\\pagelist.js"
+        ],
+        "pages": [
+            "webpack-dev-server/client?http://localhost:5000/",
+            "webpack/hot/dev-server",
+            "E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\src\\js\\pages.js"
+        ]
+    },
+    "output": {
+        "filename": "js/[name].js",
+        "publicPath": "",
+        "path": "E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\.build",
+        "libraryTarget": "var",
+        "sourceMapFilename": "[file].map[query]",
+        "hotUpdateChunkFilename": "[id].[hash].hot-update.js",
+        "hotUpdateMainFilename": "[hash].hot-update.json",
+        "crossOriginLoading": false,
+        "hashFunction": "md5",
+        "hashDigest": "hex",
+        "hashDigestLength": 20,
+        "sourcePrefix": "\t",
+        "devtoolLineToLine": false
+    },
+    "module": {
+        "loaders": [
+            {
+                "test": {},
+                "loader": "babel",
+                "exclude": {}
+            },
+            {
+                "test": {},
+                "loader": "vue"
+            },
+            {
+                "test": {},
+                "loader": "E:\\xampp\\htdocs\\Vue\\wap\\node_modules\\extract-text-webpack-plugin\\loader.js?{\"omit\":1,\"extract\":true,\"remove\":true}!style-loader!css-loader!sass-loader"
+            },
+            {
+                "test": {},
+                "loader": "E:\\xampp\\htdocs\\Vue\\wap\\node_modules\\extract-text-webpack-plugin\\loader.js?{\"0\":\"s\",\"1\":\"a\",\"2\":\"s\",\"3\":\"s\",\"4\":\"-\",\"5\":\"l\",\"6\":\"o\",\"7\":\"a\",\"8\":\"d\",\"9\":\"e\",\"10\":\"r\",\"omit\":1,\"extract\":true,\"remove\":true}!style-loader!css-loader"
+            },
+            {
+                "test": {},
+                "loader": "resource-url-loader",
+                "query": {
+                    "limit": 1,
+                    "invokerRoot": "E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\src\\css",
+                    "publicPath": ""
+                }
+            },
+            {
+                "test": {},
+                "loader": "resource-url-loader",
+                "query": {
+                    "limit": 1,
+                    "invokerRoot": "E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\src\\css",
+                    "publicPath": ""
+                }
+            }
+        ],
+        "unknownContextRequest": ".",
+        "unknownContextRecursive": true,
+        "unknownContextRegExp": {},
+        "unknownContextCritical": true,
+        "exprContextRequest": ".",
+        "exprContextRegExp": {},
+        "exprContextRecursive": true,
+        "exprContextCritical": true,
+        "wrappedContextRegExp": {},
+        "wrappedContextRecursive": true,
+        "wrappedContextCritical": false
+    },
+    "resolve": {
+        "extensions": [
+            "",
+            ".webpack.js",
+            ".web.js",
+            ".js",
+            ".vue",
+            ".css",
+            ".scss"
+        ],
+        "alias": {
+            "vue$": "vue/dist/vue.js",
+            "libs/bip": "E:\\xampp\\htdocs\\Vue\\wap\\libs\\bip.js",
+            "libs/chart": "E:\\xampp\\htdocs\\Vue\\wap\\libs\\chart.js",
+            "libs/date-format": "E:\\xampp\\htdocs\\Vue\\wap\\libs\\date-format.js",
+            "libs/fastclick/fastclick": "E:\\xampp\\htdocs\\Vue\\wap\\libs\\fastclick\\fastclick.js",
+            "libs/iscroll/iscroll": "E:\\xampp\\htdocs\\Vue\\wap\\libs\\iscroll\\iscroll.js",
+            "libs/jquery/jquery": "E:\\xampp\\htdocs\\Vue\\wap\\libs\\jquery\\jquery.js",
+            "libs/player/sports-player": "E:\\xampp\\htdocs\\Vue\\wap\\libs\\player\\sports-player.js",
+            "libs/restrictor": "E:\\xampp\\htdocs\\Vue\\wap\\libs\\restrictor.js",
+            "libs/swiper/swiper": "E:\\xampp\\htdocs\\Vue\\wap\\libs\\swiper\\swiper.js",
+            "libs/template/template": "E:\\xampp\\htdocs\\Vue\\wap\\libs\\template\\template.js",
+            "libs/zepto/zepto": "E:\\xampp\\htdocs\\Vue\\wap\\libs\\zepto\\zepto.js",
+            "pubs/address/address": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\address\\address.js",
+            "pubs/alias": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\alias.js",
+            "pubs/bindmob/bindmob": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\bindmob\\bindmob.js",
+            "pubs/cookie/cookie": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\cookie\\cookie.js",
+            "pubs/encrypt/encrypt": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\encrypt\\encrypt.js",
+            "pubs/encrypt/md5": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\encrypt\\md5.js",
+            "pubs/iscroll/iscroll": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\iscroll\\iscroll.js",
+            "pubs/load/load": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\load\\load.js",
+            "pubs/login/login": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\login\\login.js",
+            "pubs/lottery/lottery": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\lottery\\lottery.js",
+            "pubs/public/pub": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\public\\pub.js",
+            "pubs/register/register": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\register\\register.js",
+            "pubs/rsa/rsa": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\rsa\\rsa.js",
+            "pubs/sdkfunc/sdkfunc": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\sdkfunc\\sdkfunc.js",
+            "pubs/share/share": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\share\\share.js",
+            "pubs/stats/stats": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\stats\\stats.js",
+            "pubs/swipe/swipe": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\swipe\\swipe.js",
+            "pubs/transform/transform": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\transform\\transform.js",
+            "pubs/userbindmob/userbindmob": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\userbindmob\\userbindmob.js",
+            "pubs/userpop/userpop": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\userpop\\userpop.js",
+            "pubs/utils/utils": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\utils\\utils.js",
+            "pubs/video/video": "E:\\xampp\\htdocs\\Vue\\wap\\pubs\\video\\video.js",
+            "comps-vue/addrpop/addrpop": "E:\\xampp\\htdocs\\Vue\\wap\\comps-vue\\addrpop\\addrpop.vue",
+            "comps-vue/dialog/dialog": "E:\\xampp\\htdocs\\Vue\\wap\\comps-vue\\dialog\\dialog.vue",
+            "comps-vue/loading/loading": "E:\\xampp\\htdocs\\Vue\\wap\\comps-vue\\loading\\loading.vue",
+            "comps-vue/userpop/userpop": "E:\\xampp\\htdocs\\Vue\\wap\\comps-vue\\userpop\\userpop.vue",
+            "base-css": "E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\src\\css\\base.css",
+            "checkout-css": "E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\src\\css\\checkout.css",
+            "modal-css": "E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\src\\css\\modal.css"
+        },
+        "fastUnsafe": [],
+        "packageAlias": "browser",
+        "modulesDirectories": [
+            "web_modules",
+            "node_modules"
+        ],
+        "packageMains": [
+            "webpack",
+            "browser",
+            "web",
+            "browserify",
+            [
+                "jam",
+                "main"
+            ],
+            "main"
+        ]
+    },
+    "vue": {
+        "loaders": {
+            "css": "E:\\xampp\\htdocs\\Vue\\wap\\node_modules\\extract-text-webpack-plugin\\loader.js?{\"remove\":true}!css",
+            "sass": "E:\\xampp\\htdocs\\Vue\\wap\\node_modules\\extract-text-webpack-plugin\\loader.js?{\"remove\":true}!css!sass"
+        }
+    },
+    "plugins": [
+        {
+            "chunkNames": "commons",
+            "filenameTemplate": "js/commons.js",
+            "ident": "E:\\xampp\\htdocs\\Vue\\wap\\node_modules\\webpack\\lib\\optimize\\CommonsChunkPlugin.js0"
+        },
+        {},
+        {
+            "filename": "css/[name].css",
+            "options": {},
+            "id": 1
+        },
+        {
+            "options": {
+                "template": "E:\\xampp\\htdocs\\Vue\\wap\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\html\\address.html",
+                "filename": "address.html",
+                "hash": false,
+                "inject": "body",
+                "compile": true,
+                "favicon": false,
+                "minify": false,
+                "cache": true,
+                "showErrors": true,
+                "chunks": [
+                    "commons",
+                    "address"
+                ],
+                "excludeChunks": [],
+                "title": "Webpack App",
+                "xhtml": false
+            }
+        },
+        {
+            "options": {
+                "template": "E:\\xampp\\htdocs\\Vue\\wap\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\html\\book.html",
+                "filename": "book.html",
+                "hash": false,
+                "inject": "body",
+                "compile": true,
+                "favicon": false,
+                "minify": false,
+                "cache": true,
+                "showErrors": true,
+                "chunks": [
+                    "commons",
+                    "book"
+                ],
+                "excludeChunks": [],
+                "title": "Webpack App",
+                "xhtml": false
+            }
+        },
+        {
+            "options": {
+                "template": "E:\\xampp\\htdocs\\Vue\\wap\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\html\\book2.html",
+                "filename": "book2.html",
+                "hash": false,
+                "inject": "body",
+                "compile": true,
+                "favicon": false,
+                "minify": false,
+                "cache": true,
+                "showErrors": true,
+                "chunks": [
+                    "commons",
+                    "book2"
+                ],
+                "excludeChunks": [],
+                "title": "Webpack App",
+                "xhtml": false
+            }
+        },
+        {
+            "options": {
+                "template": "E:\\xampp\\htdocs\\Vue\\wap\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\html\\book3.html",
+                "filename": "book3.html",
+                "hash": false,
+                "inject": "body",
+                "compile": true,
+                "favicon": false,
+                "minify": false,
+                "cache": true,
+                "showErrors": true,
+                "chunks": [
+                    "commons",
+                    "book3"
+                ],
+                "excludeChunks": [],
+                "title": "Webpack App",
+                "xhtml": false
+            }
+        },
+        {
+            "options": {
+                "template": "E:\\xampp\\htdocs\\Vue\\wap\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\html\\book4.html",
+                "filename": "book4.html",
+                "hash": false,
+                "inject": "body",
+                "compile": true,
+                "favicon": false,
+                "minify": false,
+                "cache": true,
+                "showErrors": true,
+                "chunks": [
+                    "commons",
+                    "book4"
+                ],
+                "excludeChunks": [],
+                "title": "Webpack App",
+                "xhtml": false
+            }
+        },
+        {
+            "options": {
+                "template": "E:\\xampp\\htdocs\\Vue\\wap\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\html\\index.html",
+                "filename": "index.html",
+                "hash": false,
+                "inject": "body",
+                "compile": true,
+                "favicon": false,
+                "minify": false,
+                "cache": true,
+                "showErrors": true,
+                "chunks": [
+                    "commons",
+                    "index"
+                ],
+                "excludeChunks": [],
+                "title": "Webpack App",
+                "xhtml": false
+            }
+        },
+        {
+            "options": {
+                "template": "E:\\xampp\\htdocs\\Vue\\wap\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\html\\list.html",
+                "filename": "list.html",
+                "hash": false,
+                "inject": "body",
+                "compile": true,
+                "favicon": false,
+                "minify": false,
+                "cache": true,
+                "showErrors": true,
+                "chunks": [
+                    "commons",
+                    "list"
+                ],
+                "excludeChunks": [],
+                "title": "Webpack App",
+                "xhtml": false
+            }
+        },
+        {
+            "options": {
+                "template": "E:\\xampp\\htdocs\\Vue\\wap\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\html\\pagelist.html",
+                "filename": "pagelist.html",
+                "hash": false,
+                "inject": "body",
+                "compile": true,
+                "favicon": false,
+                "minify": false,
+                "cache": true,
+                "showErrors": true,
+                "chunks": [
+                    "commons",
+                    "pagelist"
+                ],
+                "excludeChunks": [],
+                "title": "Webpack App",
+                "xhtml": false
+            }
+        },
+        {
+            "options": {
+                "template": "E:\\xampp\\htdocs\\Vue\\wap\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\xampp\\htdocs\\Vue\\wap\\app\\cart\\html\\pages.html",
+                "filename": "pages.html",
+                "hash": false,
+                "inject": "body",
+                "compile": true,
+                "favicon": false,
+                "minify": false,
+                "cache": true,
+                "showErrors": true,
+                "chunks": [
+                    "commons",
+                    "pages"
+                ],
+                "excludeChunks": [],
+                "title": "Webpack App",
+                "xhtml": false
+            }
+        },
+        {}
+    ],
+    "debug": false,
+    "devtool": false,
+    "cache": true,
+    "context": "E:\\xampp\\htdocs\\Vue\\wap",
+    "target": "web",
+    "node": {
+        "console": false,
+        "process": true,
+        "global": true,
+        "setImmediate": true,
+        "__filename": "mock",
+        "__dirname": "mock"
+    },
+    "resolveLoader": {
+        "fastUnsafe": [],
+        "alias": {},
+        "modulesDirectories": [
+            "web_loaders",
+            "web_modules",
+            "node_loaders",
+            "node_modules"
+        ],
+        "packageMains": [
+            "webpackLoader",
+            "webLoader",
+            "loader",
+            "main"
+        ],
+        "extensions": [
+            "",
+            ".webpack-loader.js",
+            ".web-loader.js",
+            ".loader.js",
+            ".js"
+        ],
+        "moduleTemplates": [
+            "*-webpack-loader",
+            "*-web-loader",
+            "*-loader",
+            "*"
+        ]
+    },
+    "optimize": {
+        "occurenceOrderPreferEntry": true
+    }
+}

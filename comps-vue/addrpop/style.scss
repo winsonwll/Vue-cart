@@ -1,0 +1,245 @@
+.none {
+	display: none;
+}
+
+.addr{
+	
+	.addr_main{
+		width: 94%;
+		position: fixed;
+		top: 10%;
+		left: 3%;
+		backface-visibility: hidden;
+		background: #35373B;
+		z-index: 100;
+	    border-radius: 0 0 5px 5px;
+	    font: 16px/1.5 Microsoft Yahei,arial,\5b8b\4f53;
+	    transform: translateY(10%);
+		opacity: 0;
+		visibility: hidden;
+		backface-visibility: hidden;
+		transition: all 0.3s;
+	}
+
+	.addr_show{
+		transform: translateY(0);
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.addr_show~.addrpop_mask{
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.close{
+		width: 1.2rem;
+		height: 1.2rem;
+		position: absolute;
+		top: -2.5rem;
+		left: 50%;
+		transform: translate(-50%, 0);
+		border: 2px solid #686c73;
+		z-index: 100;
+		border-radius: 50%;
+	}
+
+	.close:before,.close:after{
+		position: absolute;
+		width: 80%;
+		height: 2px;
+		background: #686c73;
+		content: '';
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: auto;
+	}
+	
+	.close:before{
+		transform: rotate(45deg);
+	}
+
+	.close:after{
+		transform: rotate(-45deg);
+	}
+
+	.addrpop_mask{
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, .8);
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 99;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.3s;
+	}
+	
+	.add_part_t{
+		width: 100%;
+		float: left;
+		text-align: center;
+		color: #FFF;
+		height: 50px;
+		line-height: 50px;
+		background: #212225;
+		border-bottom: 1px solid #3F4146;
+		font-size: .8rem;
+		letter-spacing: 1px;
+	}
+	
+	@at-root .content{
+		width: 94%;
+		text-align: center;
+		float: left;
+		margin: 2% 3%;
+		color: #a0b3c1;
+		font-size: .65rem;
+	}
+	
+	.addr_form{
+		width: 100%;
+		font-size: .7rem;
+		padding: 0 0 1rem 0;
+		overflow: hidden;
+	}
+	
+	.add_tr{
+		width: 100%;
+		float: left;
+		margin: 2% 0 0 0;
+	}
+
+	input,.address{
+		display: block;
+		width: 75%;
+		height: 1.6rem;
+		line-height: 1.6rem;
+		text-indent: 5px;
+		float: left;
+		border: 1px solid #3f4146;
+		background: #2f3034;
+		border-radius: 5px;
+		color: #FFF;
+		outline: 0;
+		font-family: yahei, 微软雅黑, arial;
+	}
+	
+	.add_key{
+		width: 20%;
+		float: left;
+		height: 1.6rem;
+		line-height: 1.6rem;
+		text-align: right;
+		color: #FFF;
+		border-top: 1px solid #35373b;
+		border-bottom: 1px solid #35373b;
+	}
+
+	.addr_choose{
+		width: 75%;
+		float: left;
+	}
+	
+	.prov{
+		display: block;
+		margin: 0 3% 2% 0;
+		width: 36%;
+		float: left;
+		height: 1.6rem;
+		border: 1px solid #3f4146;
+		line-height: 1.6rem;
+		color: #FFF;
+		border-radius: 4px;
+		outline: 0;
+		background: #2f3034;
+		font-family: yahei, 微软雅黑, arial;
+		text-indent: 5px;
+
+		option{
+			display: block;
+			width: 100%;
+			height: 1.6rem;
+			float: left;
+			line-height: 1.6rem;
+			text-indent: 5px;
+		}
+	}
+
+	.city{
+		@extend .prov;
+		margin: 0 0 2% 0;
+	}
+	
+	.address {
+		width: 71%;
+		float: left;
+		height: 100px;
+		line-height: 25px;
+		padding: .2em 2% 0;
+		margin: 0 0 0 20%;
+		text-indent: 0;
+	}
+
+	option {
+		display: block;
+		height: 1.2rem;
+		line-height: 1.2rem;
+	}
+	
+	@at-root .add_btn {
+		display: block;
+		width: 75%;
+		float: left;
+		margin: .7rem 0 0 20%;
+		border-radius: 5px;
+		height: 1.6rem;
+		line-height: 1.6rem;
+		text-align: center;
+		background: #FFCC19;
+		color: #A43600;
+		text-decoration: none;
+		font-size: .75rem;
+	}
+
+	.result_ok{
+		@extend .addr_form;
+
+		.add_btn{
+			margin: 1rem 0 0 12.5%;
+		}
+
+		.content{
+			font-size: .75rem;
+			margin: 5% 3% 2% 3%;
+		}
+	}
+
+	.tips{
+		background: rgba(0 ,0, 0, .7);
+		position: absolute;
+		padding: .5rem;
+		text-align: center;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -40%);
+		z-index: 101;
+		color: #FFF;
+		border-radius: 5px;
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s;
+	}
+
+	.tipsshow{
+		opacity: 1;
+		visibility: visible;
+		transform: translate(-50%, -50%);
+	}
+}
+
+
+

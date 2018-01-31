@@ -1,0 +1,11 @@
+{
+    "alias": {
+        "base-css": "src/css/base.css",
+        "checkout-css": "src/css/checkout.css",
+        "modal-css": "src/css/modal.css"
+    },
+    "open" : true,
+    "home": "index.html",
+    "watch" : true,
+    "staticversion": "v_20170410192400"
+}
